@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden; /* Hide scrollbars */
+    transition: all ease;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    border: 2px solid rgb(255, 255, 255);
+    background-color: rgb(145, 243, 243);
+}
+
+/* rod */
+.rod {
+    margin: 10px;
+    height: 25px;
+    width: clamp(120px, 30%, 170px);     /* clamp(min,preferred,max) */
+    position: fixed;
+    text-align: center;
+    background-color: rgb(154, 56, 245);
+    border-radius: 12px;
+
+    /* Center the rods horizontally */
+    left: 45%;
+    /* transform: translateX(-50%); */
+}
+
+#rod1 {
+    top: 0%;
+}
+#rod2 {
+    bottom: 0%;
+}
+
+/* ball */
+#ball {
+    height: 20px;
+    width: 20px;
+    position: fixed;
+    background-color: rgb(223, 44, 44);
+    border-radius: 50%;
+
+    /* Center the ball both vertically and horizontally */
+    top: 49%;
+    left: 49%;
+    /* transform: translate(-50%, -50%); */
+}
